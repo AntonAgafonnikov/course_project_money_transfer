@@ -1,6 +1,9 @@
 package ru.netology.course_project_money_transfer.model.operation;
 
+import jakarta.validation.constraints.Size;
+
 public class Amount {
+    @Size(min = 0, max = 2000000000, message = "Incorrect amount. Range 0 - 2 000 000 000.")
     private int value;
     private String currency;
 

@@ -15,7 +15,7 @@ public class TransferRepository {
     }
 
     public static void saveOperation(Operation operation) {
-        operationStorage.put(operation.getUuid().toString(), operation);
+        operationStorage.put(operation.getUuid(), operation);
     }
 
     public ConcurrentMap<String, Operation> getOperationStorage() {

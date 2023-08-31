@@ -4,8 +4,8 @@ import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Size;
 
 public class CardTo {
-//    @NotEmpty(message = "A card can't be without number!")
-//    @Size(min = 16, max = 16, message = "A card size should be 16 characters!")
+    @NotEmpty(message = "A card can't be without number!")
+    @Size(min = 16, max = 16, message = "A card size should be 16 characters!")
     private String cardNumber;
 
     public CardTo() {

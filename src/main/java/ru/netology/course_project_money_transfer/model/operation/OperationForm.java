@@ -10,7 +10,8 @@ public class OperationForm {
     public OperationForm() {
     }
 
-    public OperationForm(String cardFromNumber, String cardFromValidTill, String cardFromCVV, String cardToNumber, Amount amount) {
+    public OperationForm(String cardFromNumber, String cardFromValidTill, String cardFromCVV, String cardToNumber,
+                         Amount amount) {
         this.cardFromNumber = cardFromNumber;
         this.cardFromValidTill = cardFromValidTill;
         this.cardFromCVV = cardFromCVV;

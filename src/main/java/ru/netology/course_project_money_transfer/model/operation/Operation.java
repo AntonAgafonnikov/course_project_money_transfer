@@ -100,12 +100,13 @@ public class Operation {
 
     @Override
     public String toString() {
+        this.success = this.isSuccessful?COMPLETED:NOT_COMPLETED;
         return DF.format(date) +
                 " from card: '" + this.cardFrom.getCardNumber() +
                 "' to card: '" + this.cardTo.getCardNumber() +
                 "'. Amount: " + this.amount.getValue() + this.amount.getCurrency() +
                 ". Commission " + COMMISSION +
                 "%: " + this.commissionAmount + this.amount.getCurrency() +
-                " - [" + this.isSuccessful + "]";
+                " - [" + this.success + "]";
     }
 }
