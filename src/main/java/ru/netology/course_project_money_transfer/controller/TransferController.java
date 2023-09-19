@@ -10,11 +10,11 @@ import ru.netology.course_project_money_transfer.service.TransferService;
 import java.util.UUID;
 
 @RestController
-public class Controller {
+public class TransferController {
 
     private TransferService transferService;
 
-    public Controller(TransferService transferService) {
+    public TransferController(TransferService transferService) {
         this.transferService = transferService;
     }
 
