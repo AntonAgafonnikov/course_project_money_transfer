@@ -4,4 +4,4 @@ services:
   courseapp:
     image: 'courseapp:latest'
     ports:
-      - '5500:8080'
+      - '8080:8080'
